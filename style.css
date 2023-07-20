@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@100;200;300;400;500;600;700;800&family=Macondo&family=Poppins:wght@200;300;400;500;600;700;800&family=Sacramento&family=Tsukimi+Rounded:wght@300;400;500;600;700&family=Varela+Round&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --primaryColor: #00ccff;
+    --secondaryColor: #2ed5ff;
+    --textColorDark: #111111;
+    --textColorMedium: #555555;
+    --textColorLight: #ffffff;
+    --purple: #913b8b;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Poppins", sans-serif !important;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+   
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin-top: -20px;
+    width: 320px;
+    height: 450px;
+    border-radius: 30px;
+    background: transparent;
+    border: 5px solid var(--primaryColor);
+    box-shadow: rgba(110, 200, 223, 0.801) 0px 4px 12px;
+    
+
+}
+
+.main-heading{
+    
+    font-size: 3rem;
+    font-weight: 800;
+    height: 50px;
+    letter-spacing: 3px;
+    text-align: center;
+    font-family:'Tsukimi Rounded', sans-serif ;
+    color: var(--black);
+    background-color: var(--primaryColor);
+    box-shadow: rgba(110, 200, 223, 0.801) 0px 4px 12px;
+
+
+    
+}
+
+.card input{
+    margin: 20px 15px;
+    height: 38px;
+    width: 230px;
+    border-radius: 10px;
+    font-size: 1.9rem;
+    text-align: center;
+    outline: 0;
+    border: 3px solid var(--primaryColor);
+    background-color: transparent;
+    color: var(--textColorLight);
+    
+}
+
+.card button{
+    margin-left: -13px;
+    padding: 5px;
+    background-color: transparent;
+    border: 2px solid var(--primaryColor);
+    color: var(--textColorLight);
+    border-radius: 6px;
+
+}
+.card button:hover{
+    background-color: var(--primaryColor);
+    color: var(--textColorMedium);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.weather{
+    text-align: center;
+    color: var(--textColorLight);
+    font-family:'Tsukimi Rounded', sans-serif ;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-top: -13px;
+
+}
+.weather-img{
+    height: 130px;
+
+}
+
+.Temperature-section{
+    margin-top: -5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Temperature-section h4{
+    border: 1px solid red;
+    margin-top: 8px;
+    padding: 10px;
+    border: 2px solid var(--textColorMedium);
+    width: 240px;
+    color: var(--primaryColor);
+    font-family:'Tsukimi Rounded', sans-serif ;
+    letter-spacing: 3px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+
+}
+
+.Temperature-section h4 span{
+    color: var(--textColorLight);
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+.weather-info{
+    letter-spacing: 2px;
+    margin-top: -12px;
+}
